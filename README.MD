@@ -50,7 +50,7 @@ To use this script(s) do the following:
      `git clone https://github.com/azoughbi/php-ini-optimize.git`
     
   2. Run the shell script `php_optimize`. 
-  	 It has three arguments `php_cleanup -p [-d] -m 2G /path/to/php.ini`:
+  	 It has three arguments `php_optimize -p [-d] -m 2G /path/to/php.ini`:
      
      a) the first argument:
         either `-p` to optimize **production** environment
@@ -66,19 +66,19 @@ To use this script(s) do the following:
   
   1. Optimize production site, running the script on the current directory:
       
-	 `php_cleanup -p`
+	 `php_optimize -p`
       
   2. Optimize development site, running the script on the current directory:
   
-	 `php_cleanup -d`
+	 `php_optimize -d`
      
      
   3. Optimize production site with [PHP FPM](http://php-fpm.org),
      from outside `/etc/php5/fpm` directory:
      
-     `php_cleanup -p /etc/php5/fpm/php.ini`
+     `php_optimize -p /etc/php5/fpm/php.ini`
 
-  4. Cleanup a production site with [PHP FPM](http://php-fpm.org),
+  4. Optimize a production site with [PHP FPM](http://php-fpm.org),
      from outside `/etc/php5/fpm` directory and set the memory limit to 2G:
      
-	 `php_cleanup -p -m 2G /etc/php5/fpm/php.ini`
+	 `php_optimize -p -m 2G /etc/php5/fpm/php.ini`
